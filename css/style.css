@@ -38,7 +38,12 @@ article {
 }
 
 /* menu */
+#menu {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
 
-#menu ul {
+#menu li {
     list-style-type: none;
 }
