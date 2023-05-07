@@ -78,12 +78,13 @@ section {
     font-size: xxx-large;
     display: block;
     width: 40%;
+    text-shadow: -10px 20px rgba(0, 112, 97, 1), -20px 40px rgba(0, 102, 89, 0.75), -30px 60px rgba(0, 92, 80, 0.5), -40px 80px rgba(0, 92, 80, 0.25);
 }
 
 #logo {
     grid-area: 1 / 1 / 1 / 1;
     width: 16%;
-    padding-left: 70%;
+    padding-left: 60%;
     z-index: 2;
 }
 
@@ -127,7 +128,7 @@ footer p {
 }
 
 /*#############################################################################MEDIA QUERIES #############################################################################*/
-@media (max-width:650px) {
+@media screen and (max-width: 650px) {
     #menu {
         gap: 15%;
         flex-direction: column;
@@ -142,6 +143,7 @@ footer p {
 
     #logo-title {
         font-size: xx-large;
+        text-shadow: none !important;
     }
 
     span#rounded-corners {
