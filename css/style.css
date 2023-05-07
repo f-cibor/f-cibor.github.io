@@ -6,6 +6,9 @@
     --color-accent2: #007061;
     /* for border-radius*/
     --edginess: 25px;
+    --article-gradient: linear-gradient(145deg, #00a790, #00c6ab);
+    --article-shadow: inset 40px 40px 80px #009d88,
+        inset -40px -40px 80px #00d5b8;
 }
 
 /********************************************************** Basics **********************************************************/
@@ -93,10 +96,10 @@ section {
 
 /********************************************************** Article **********************************************************/
 article {
-    background: #00b9a0;
-    box-shadow: inset 40px 40px 80px #009d88,
-        inset -40px -40px 80px #00d5b8;
-    margin: 0 10%;
+    border-radius: var(--edginess);
+    background: var(--article-gradient);
+    box-shadow: var(--article-shadow);
+    margin: 5% 10%;
     padding: 5% 10%;
 }
 
@@ -104,4 +107,6 @@ article {
 footer {
     text-align: right;
     font-size: small;
+    position: fixed;
+    display: contents;
 }
