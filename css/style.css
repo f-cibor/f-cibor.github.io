@@ -28,6 +28,7 @@ nav {
 
 a,
 a:visited {
+    font-weight: bold;
     color: var(--color-accent);
     text-decoration: none;
 }
@@ -38,10 +39,14 @@ article {
 }
 
 /********************************************************** Menu **********************************************************/
+nav {
+    margin: 2% 0;
+}
+
 #menu {
     display: flex;
     gap: 10%;
-    list-style-type: none;
+    justify-content: center;
 }
 
 #menu li.menu-item {
@@ -50,7 +55,7 @@ article {
 
 li.menu-item a {
     background: linear-gradient(145deg, #00a790, #00c6ab);
-    box-shadow: 20px 20px 60px #009d88, -20px -20px 60px #00d5b8;
+    box-shadow: 10px 10px 25px #009d88, -10px -10px 25px #00d5b8;
     display: block;
     width: 10rem;
     padding: 0.5rem 0;
@@ -86,9 +91,17 @@ section {
     z-index: 1;
 }
 
+/********************************************************** Article **********************************************************/
+article {
+    background: #00b9a0;
+    box-shadow: inset 40px 40px 80px #009d88,
+        inset -40px -40px 80px #00d5b8;
+    margin: 0 10%;
+    padding: 5% 10%;
+}
+
 /********************************************************** Footer **********************************************************/
 footer {
-    background-color: var(--color-accent2);
     text-align: right;
     font-size: small;
 }
