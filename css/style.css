@@ -11,3 +11,9 @@ h6,
 nav {
     font-family: 'Unbounded', cursive;
 }
+
+section,
+article {
+    padding-left: 20%;
+    padding-right: 20%;
+}
