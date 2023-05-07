@@ -47,6 +47,7 @@ nav {
     display: flex;
     gap: 10%;
     justify-content: center;
+    padding: 0;
 }
 
 #menu li.menu-item {
@@ -104,7 +105,7 @@ article {
 
 }
 
-#rounded-corners {
+span#rounded-corners {
     background: linear-gradient(145deg, #00c6ab, #00a790);
     box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8;
     display: inline-block;
@@ -123,4 +124,28 @@ footer {
 
 footer p {
     padding: 1rem;
+}
+
+/*#############################################################################MEDIA QUERIES #############################################################################*/
+@media (min-width:650px) {
+    #menu {
+        gap: 15%;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    #menu-item a {
+        margin: 6% 0;
+        width: 20rem;
+    }
+
+    #logo-title {
+        font-size: xx-large;
+    }
+
+    span#rounded-corners {
+        margin: 0.5em;
+        padding: 0.2em;
+    }
 }
