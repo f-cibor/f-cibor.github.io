@@ -1,4 +1,4 @@
-/* variables */
+/********************************************************** Vars **********************************************************/
 :root {
     --color-main: #00b9a0;
     --color-text: #FFF;
@@ -8,7 +8,7 @@
     --edginess: 25px;
 }
 
-/* basic stuff */
+/********************************************************** Basics **********************************************************/
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--color-main);
@@ -37,13 +37,58 @@ article {
     padding-right: 20%;
 }
 
-/* menu */
+/********************************************************** Menu **********************************************************/
 #menu {
     display: flex;
-    gap: 1rem;
+    gap: 10%;
     list-style-type: none;
 }
 
-#menu li {
+#menu li.menu-item {
     list-style-type: none;
+}
+
+li.menu-item a {
+    background: linear-gradient(145deg, #00a790, #00c6ab);
+    box-shadow: 20px 20px 60px #009d88, -20px -20px 60px #00d5b8;
+    display: block;
+    width: 10rem;
+    padding: 0.5rem 0;
+    border-radius: var(--edginess);
+    text-align: center;
+}
+
+/********************************************************** Graphic **********************************************************/
+section {
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+
+#logo-title {
+    grid-area: 1 / 1 / 1 / 1;
+    margin-left: 20%;
+    font-size: xxx-large;
+    display: block;
+    width: 40%;
+}
+
+#logo {
+    grid-area: 1 / 1 / 1 / 1;
+    width: 16%;
+    padding-left: 70%;
+    z-index: 2;
+}
+
+#logo-background {
+    grid-area: 1 / 1 / 1 / 1;
+    width: 100%;
+    z-index: 1;
+}
+
+/********************************************************** Footer **********************************************************/
+footer {
+    background-color: var(--color-accent2);
+    text-align: right;
+    font-size: small;
 }
