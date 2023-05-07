@@ -1,5 +1,19 @@
+/* variables */
+:root {
+    --color-main: #00b9a0;
+    --color-text: #FFF;
+    --color-accent: #fc8c2a;
+    --color-accent2: #007061;
+    /* for border-radius*/
+    --edginess: 25px;
+}
+
+/* basic stuff */
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    margin: 0;
 }
 
 h1,
@@ -12,8 +26,19 @@ nav {
     font-family: 'Unbounded', cursive;
 }
 
-section,
+a,
+a:visited {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
 article {
     padding-left: 20%;
     padding-right: 20%;
+}
+
+/* menu */
+
+#menu ul {
+    list-style-type: none;
 }
