@@ -22,7 +22,8 @@ h3,
 h4,
 h5,
 h6,
-nav {
+nav,
+li {
     font-family: 'Unbounded', cursive;
 }
 
@@ -73,7 +74,8 @@ section {
     align-items: center;
 }
 
-#logo-title {
+#logo-title,
+#portfolio-title {
     grid-area: 1 / 1 / 1 / 1;
     margin-left: 20%;
     font-size: xxx-large;
@@ -129,7 +131,7 @@ footer p {
     padding: 1rem;
 }
 
-/*#############################################################################MEDIA QUERIES #############################################################################*/
+/*############################################################################# MEDIA QUERIES #############################################################################*/
 @media screen and (max-width: 650px) {
     #menu {
         gap: 15%;
@@ -152,4 +154,17 @@ footer p {
         margin: 0.5em;
         padding: 0.2em;
     }
+}
+
+/*############################################################################# PORTFOLIO #############################################################################*/
+section#portfolio-title-section {
+    margin: 5% 20%;
+    text-align: center;
+    /* Maybe make it stand-out? */
+}
+
+article#portfolio-content {
+    margin: 5%;
+    padding: 5%;
+    /* Change the background to a standard stand-out div. */
 }
