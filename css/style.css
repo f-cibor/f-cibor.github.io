@@ -31,6 +31,7 @@ a:visited {
     font-weight: bold;
     color: var(--color-accent);
     text-decoration: none;
+    text-shadow: -0.5px 0.5px 0px var(--color-accent2);
 }
 
 article {
@@ -79,6 +80,7 @@ section {
     display: block;
     width: 40%;
     text-shadow: -10px 20px rgba(0, 112, 97, 1), -20px 40px rgba(0, 102, 89, 0.75), -30px 60px rgba(0, 92, 80, 0.5), -40px 80px rgba(0, 92, 80, 0.25);
+    z-index: 3;
 }
 
 #logo {
