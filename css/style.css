@@ -85,6 +85,13 @@ section {
     z-index: 3;
 }
 
+section#portfolio-title-section h1#portfolio-title {
+    width: auto;
+    margin-left: 0;
+    display: inline;
+    text-align: start;
+}
+
 #logo {
     grid-area: 1 / 1 / 1 / 1;
     width: 16%;
@@ -129,6 +136,9 @@ footer {
 
 footer p {
     padding: 1rem;
+    border-radius: var(--edginess) var(--edginess) 0 0;
+    border-top: 1px solid rgba(0, 213, 184, 0.1);
+    box-shadow: -6px -6px 10px #00d5b8;
 }
 
 /*############################################################################# MEDIA QUERIES #############################################################################*/
@@ -167,4 +177,25 @@ article#portfolio-content {
     margin: 5%;
     padding: 5%;
     /* Change the background to a standard stand-out div. */
+    background: var(--color-main);
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8;
+    border: 1px solid rgba(0, 213, 184, 0.1);
+}
+
+ol#portfolio-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+li.record {
+    display: block;
+    border-radius: var(--edginess);
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8;
+    border: 1px solid rgba(0, 213, 184, 0.1);
+    padding: 1%;
 }
