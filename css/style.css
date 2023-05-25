@@ -193,6 +193,7 @@ ol#portfolio-list {
     align-items: stretch;
 }
 
+/* Record */
 li.record {
     display: block;
     border-radius: var(--edginess);
@@ -207,4 +208,9 @@ a.record-link {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+img.record-img {
+    width: 100%;
+    height: 10vw;
 }
