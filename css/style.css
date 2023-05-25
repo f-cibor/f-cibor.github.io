@@ -138,7 +138,7 @@ footer p {
     padding: 1rem;
     border-radius: var(--edginess) var(--edginess) 0 0;
     border-top: 1px solid rgba(0, 213, 184, 0.1);
-    box-shadow: -6px -6px 10px #00d5b8;
+    box-shadow: -6px -9px 10px #00d5b8;
 }
 
 /*############################################################################# MEDIA QUERIES #############################################################################*/
@@ -186,7 +186,8 @@ ol#portfolio-list {
     list-style-type: none;
     padding: 0;
     display: flex;
-    gap: 5%;
+    flex-wrap: wrap;
+    gap: 3vw;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: stretch;
