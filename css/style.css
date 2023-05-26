@@ -9,6 +9,10 @@
 }
 
 /********************************************************** Basics **********************************************************/
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--color-main);
@@ -49,6 +53,7 @@ nav {
     display: flex;
     gap: 10%;
     justify-content: center;
+    align-items: center;
     padding: 0;
 }
 
@@ -56,15 +61,22 @@ nav {
     list-style-type: none;
 }
 
+img#menu-logo {
+    width: auto;
+    height: 5vw;
+}
+
 li.menu-item a {
     background: linear-gradient(145deg, #00a790, #00c6ab);
-    box-shadow: 10px 10px 25px #009d88, -10px -10px 25px #00d5b8;
+    box-shadow: 10px 10px 25px #009d88, -10px -10px 25px
+        /*#00d5b8*/
+        #00cdb2dd;
     display: block;
     width: 10rem;
     padding: 0.5rem 0;
     border-radius: var(--edginess);
     text-align: center;
-    border: 1px solid rgba(0, 213, 184, 0.1);
+    border: 1px solid #009d8820;
 }
 
 /********************************************************** Graphic **********************************************************/
@@ -113,17 +125,19 @@ article {
         inset -40px -40px 80px #00d5b8;
     margin: 5% 10%;
     padding: 5% 10%;
-    border: 1px solid rgba(0, 213, 184, 0.1);
+    border: 1px solid #009d8820;
 
 }
 
 span#rounded-corners {
     background: linear-gradient(145deg, #00c6ab, #00a790);
-    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8;
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px
+        /*#00d5b8*/
+        #00cdb2dd;
     display: inline-block;
     padding: 0.5em;
     border-radius: var(--edginess);
-    border: 1px solid rgba(0, 213, 184, 0.1);
+    border: 1px solid #009d8820;
 }
 
 /********************************************************** Footer **********************************************************/
@@ -137,8 +151,8 @@ footer {
 footer p {
     padding: 1rem;
     border-radius: var(--edginess) var(--edginess) 0 0;
-    border-top: 1px solid rgba(0, 213, 184, 0.1);
-    box-shadow: -6px -9px 10px #00d5b8;
+    border-top: 1px solid #009d8820;
+    box-shadow: -6px -9px 10px #00d5b8dd;
 }
 
 /*############################################################################# MEDIA QUERIES #############################################################################*/
@@ -178,8 +192,10 @@ article#portfolio-content {
     padding: 5%;
     /* Change the background to a standard stand-out div. */
     background: var(--color-main);
-    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8;
-    border: 1px solid rgba(0, 213, 184, 0.1);
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px
+        /*#00d5b8*/
+        #00cdb2dd;
+    border: 1px solid #009d8820;
 }
 
 ol#portfolio-list {
@@ -197,9 +213,11 @@ ol#portfolio-list {
 li.record {
     display: block;
     border-radius: var(--edginess);
-    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8;
-    border: 1px solid rgba(0, 213, 184, 0.1);
-    padding: 1%;
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8dd;
+    border: 1px solid #009d8820;
+    width: 20%;
+    height: 20%;
+    /*padding: 1%;*/
 }
 
 a.record-link {
@@ -208,9 +226,10 @@ a.record-link {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 7%;
 }
 
 img.record-img {
-    width: 100%;
+    width: auto;
     height: 10vw;
 }
