@@ -8,6 +8,21 @@
     --edginess: 25px;
 }
 
+/********************************************************** Scroll **********************************************************/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f101;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent2);
+    border-radius: var(--edginess);
+}
+
+/********************************************************** Anim **********************************************************/
 @-webkit-keyframes slide-in-blurred-tr {
     0% {
         -webkit-transform: translate(1000px, -1000px) skew(-80deg, -10deg);
@@ -229,7 +244,7 @@ footer p {
     }
 
     .logo-item {
-        display: none;
+        display: none !important;
     }
 
     #logo-title {
@@ -244,13 +259,17 @@ footer p {
     }
 
     section {
-        margin-bottom: 6vh;
+        margin-bottom: 6vh !important;
+    }
+
+    footer p {
+        margin-top: 8vw;
     }
 }
 
 /*############################################################################# PORTFOLIO #############################################################################*/
 section#portfolio-title-section {
-    margin: 5% 20%;
+    margin: 5% 20% 7vw;
     text-align: center;
     /* Maybe make it stand-out? */
 }
