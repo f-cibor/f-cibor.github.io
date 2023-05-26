@@ -8,6 +8,30 @@
     --edginess: 25px;
 }
 
+@-webkit-keyframes slide-tr {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px) translateX(100px);
+        transform: translateY(-100px) translateX(100px)
+    }
+}
+
+@keyframes slide-tr {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px) translateX(100px);
+        transform: translateY(-100px) translateX(100px)
+    }
+}
+
 /********************************************************** Basics **********************************************************/
 li.menu-item a,
 article,
@@ -73,9 +97,7 @@ img#menu-logo {
 
 li.menu-item a {
     background: linear-gradient(145deg, #00a790, #00c6ab);
-    box-shadow: 10px 10px 25px #009d88, -10px -10px 25px
-        /*#00d5b8*/
-        #00cdb2dd;
+    box-shadow: 10px 10px 25px #009d88, -10px -10px 25px #00d9bcEE;
     display: block;
     width: 10rem;
     padding: 0.5rem 0;
@@ -114,6 +136,8 @@ section#portfolio-title-section h1#portfolio-title {
     width: 16%;
     padding-left: 60%;
     z-index: 2;
+    -webkit-animation: slide-tr .75s cubic-bezier(.86, 0.000, .07, 1.000) .25s;
+    animation: slide-tr .75s cubic-bezier(.86, 0.000, .07, 1.000) .25s;
 }
 
 #logo-background {
@@ -126,8 +150,8 @@ section#portfolio-title-section h1#portfolio-title {
 article {
     border-radius: var(--edginess);
     background: linear-gradient(145deg, #00a790, #00c6ab);
-    box-shadow: inset 40px 40px 80px #009d88,
-        inset -40px -40px 80px #00d5b8;
+    box-shadow: inset 40px 40px 80px #009d88F0,
+        inset -40px -40px 80px #00d9bcEE;
     margin: 5% 10%;
     padding: 5% 10%;
     border: 1px solid #009d8820;
@@ -136,9 +160,7 @@ article {
 
 span#rounded-corners {
     background: linear-gradient(145deg, #00c6ab, #00a790);
-    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px
-        /*#00d5b8*/
-        #00cdb2dd;
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d9bcEE;
     display: inline-block;
     padding: 0.5em;
     border-radius: var(--edginess);
@@ -157,7 +179,7 @@ footer p {
     padding: 1rem;
     border-radius: var(--edginess) var(--edginess) 0 0;
     border-top: 1px solid #009d8820;
-    box-shadow: -6px -9px 10px #00d5b8dd;
+    box-shadow: -6px -9px 10px #00d9bcEE;
 }
 
 /*############################################################################# MEDIA QUERIES #############################################################################*/
@@ -197,9 +219,7 @@ article#portfolio-content {
     padding: 5%;
     /* Change the background to a standard stand-out div. */
     background: var(--color-main);
-    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px
-        /*#00d5b8*/
-        #00cdb2dd;
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d9bcEE;
     border: 1px solid #009d8820;
 }
 
@@ -210,31 +230,37 @@ ol#portfolio-list {
     flex-wrap: wrap;
     gap: 3vw;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
+    /*justify-content: space-evenly;
+    align-items: stretch;*/
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Record */
 li.record {
     display: block;
     border-radius: var(--edginess);
-    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d5b8dd;
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d9bcEE;
     border: 1px solid #009d8820;
     width: 20%;
-    height: 20%;
+    max-height: 20%;
     /*padding: 1%;*/
 }
 
-a.record-link {
+.record-wrapper {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+a.record-link {
+    height: 100%;
     padding: 7%;
 }
 
 img.record-img {
-    width: auto;
-    height: 10vw;
+    max-width: 80%;
+    max-height: 8vw;
 }
