@@ -126,6 +126,16 @@ li.menu-item a {
     border: 1px solid #009d8820;
 }
 
+li.logo-item * {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+li.logo-item a {
+    width: initial;
+}
+
 /********************************************************** Graphic **********************************************************/
 section {
     display: grid;
@@ -213,19 +223,28 @@ footer p {
         flex-wrap: wrap;
     }
 
-    #menu-item a {
+    .menu-item a {
         margin: 6% 0;
         width: 20rem;
     }
 
+    .logo-item {
+        display: none;
+    }
+
     #logo-title {
         font-size: xx-large;
-        text-shadow: none !important;
+        /*text-shadow: none !important*/
+        ;
     }
 
     span#rounded-corners {
         margin: 0.5em;
         padding: 0.2em;
+    }
+
+    section {
+        margin-bottom: 6vh;
     }
 }
 
@@ -285,4 +304,11 @@ a.record-link {
 img.record-img {
     width: auto;
     height: 100px;
+}
+
+/*############################################################################# CONTACT #############################################################################*/
+article#contact-article {
+    box-shadow: 5px 5px 10px #009d88, -5px -5px 10px #00d9bcEE;
+    background: linear-gradient(145deg, #00c6ab, #00a790);
+    border: 1px solid #009d8860;
 }
