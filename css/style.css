@@ -9,7 +9,12 @@
 }
 
 /********************************************************** Basics **********************************************************/
-* {
+li.menu-item a,
+article,
+span#rounded-corners,
+footer p,
+article#portfolio-content,
+li.record {
     box-sizing: border-box;
 }
 
